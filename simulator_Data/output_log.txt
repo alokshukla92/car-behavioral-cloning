@@ -22,7 +22,7 @@ Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\s
 Loading D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\UnityEngine.CloudBuild.dll into Unity Child Domain
 Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\UniFileBrowser.dll (this message is harmless)
 Loading D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\UniFileBrowser.dll into Unity Child Domain
-- Completed reload, in  0.130 seconds
+- Completed reload, in  0.082 seconds
 Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on ReturnToMainMenu
@@ -36,30 +36,3 @@ Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\s
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 1.991900 ms
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 34d4 -> priority: 1 
-  Thread -> id: 22d4 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.264700 ms
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 419.
-Total: 0.312800 ms (FindLiveObjects: 0.036500 ms CreateObjectMapping: 0.010700 ms MarkObjects: 0.245300 ms  DeleteObjects: 0.019600 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.461200 ms
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1465.
-Total: 1.025500 ms (FindLiveObjects: 0.136800 ms CreateObjectMapping: 0.034300 ms MarkObjects: 0.392000 ms  DeleteObjects: 0.461400 ms)
-
-Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\System.Configuration.dll (this message is harmless)
-Platform assembly: D:\College\Projects\Self-driving_car\car-behavioral-cloning\simulator_Data\Managed\System.Xml.dll (this message is harmless)
-Connection Open
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Connection Open
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
