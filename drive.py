@@ -42,7 +42,7 @@ def telemetry(sid, data):
             timestamp = datetime.utcnow().strftime('%Y_%m_%d_%H_%M_%S_%f')[:-3]
             image_filename = os.path.join(args.image_folder, timestamp)
             image.save('{}.jpg'.format(image_filename))
-            
+
         try:
             image = np.asarray(image)       # from PIL image to numpy array
             image = utils.preprocess(image) # apply the preprocessing
@@ -54,17 +54,15 @@ def telemetry(sid, data):
             # if the speed is above the current speed limit, we are on a downhill.
             # make sure we slow down first and then go back to the original max speed.
             global speed_limit
-            if speed > speed_limit:
-                speed_limit = MIN_SPEED  # slow down
-            else:
-                speed_limit = MAX_SPEED
+            speed_limit = MIN_SPEED if speed > speed_limit else MAX_SPEED
+            # throttle = 1.0 - speed/speed_limit
             throttle = 1.0 - steering_angle**2 - (speed/speed_limit)**2
 
             print('{} {} {}'.format(steering_angle, throttle, speed))
             send_control(steering_angle, throttle)
         except Exception as e:
             print(e)
-        
+
     else:
         # NOTE: DON'T EDIT THIS.
         sio.emit('manual', data={}, skip_sid=True)
@@ -106,11 +104,9 @@ if __name__ == '__main__':
 
     if args.image_folder != '':
         print("Creating image folder at {}".format(args.image_folder))
-        if not os.path.exists(args.image_folder):
-            os.makedirs(args.image_folder)
-        else:
+        if os.path.exists(args.image_folder):
             shutil.rmtree(args.image_folder)
-            os.makedirs(args.image_folder)
+        os.makedirs(args.image_folder)
         print("RECORDING THIS RUN ...")
     else:
         print("NOT RECORDING THIS RUN ...")
